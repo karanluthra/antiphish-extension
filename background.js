@@ -10,7 +10,8 @@ chrome.webRequest.onBeforeRequest.addListener(
 			if(oReq.status === 200) {
 				
 				alert("PHISHING");
-				return {redirectUrl: "http://www.google.com"};
+				
+				return {redirectUrl: "www.google.co.in"};
 			}
 		}
 	};
@@ -26,3 +27,5 @@ chrome.webRequest.onBeforeRequest.addListener(
   },
   // extraInfoSpec
   ["blocking"]);
+
+
