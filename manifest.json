@@ -2,7 +2,13 @@
   "name": "Antiphish Extension",
   "version": "1.1",
   "description": "Exterminate Phishing!",
-  "permissions": ["webRequest","http://*/*","https://*/*"],
+  "page_action" :
+  {
+    "default_icon" : "warning.png",
+    "default_title" : "This maybe a Phished site",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["webRequest","tabs","http://*/*","https://*/*"],
   "background": {
     "scripts": ["background.js","jquery.js"]
   },
